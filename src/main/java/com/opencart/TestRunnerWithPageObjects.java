@@ -7,7 +7,6 @@ import com.opencart.pageobjects.HomePage;
 import com.opencart.pageobjects.LoginPage;
 import com.opencart.pageobjects.RegisterPage;
 import org.openqa.selenium.*;
-import org.openqa.selenium.bidi.log.Log;
 
 public class TestRunnerWithPageObjects {
     public static void main(String[] args) throws InterruptedException {

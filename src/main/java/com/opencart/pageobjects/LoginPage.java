@@ -22,11 +22,4 @@ public class LoginPage extends Page{
         usernameInput.sendKeys(username);
         passwordInput.sendKeys(password);
     }
-
-    public void clickLoginBtn(){
-        ScrollManager.scrollToTheElement(loginBtn);
-        loginBtn.click();
-    }
-
-
 }

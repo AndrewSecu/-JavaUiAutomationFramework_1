@@ -17,7 +17,7 @@ Feature: Login Related Test Cases
       | andrei.secu@gmail.com | The Password!1 | password          |
       | andreeail.com         | The Password1  | password          |
 
-  @Regression
+  @Regression @ITSM-15842
   Scenario Outline: Successful login is performed with valid credentials
     Given "/index.php?route=account/login&language=en-gb" endpoint is accessed
     When the following form from "LoginPage" is populated as follow:

@@ -1,4 +1,4 @@
-@run
+@run1
 Feature: Register Flow Test Suite
 
   Background:
@@ -9,12 +9,14 @@ Feature: Register Flow Test Suite
     When registerLink from Header menu is clicked
     Then the current url contains "route=account/register" keyword
 
+  @debug
   Scenario: The Account Page URL is opened when the registration is successful
     When the following form from "RegisterPage" is populated as follow:
       | firstNameInput | Random         |
       | lastNameInput  | Random         |
       | emailInput     | RandomEmail    |
       | passwordInput  | RandomPassword |
+    And the "privacyToggle" from "RegisterPage" is clicked
     And the "continueBtn" from "RegisterPage" is clicked
     Then the current url contains "route=account/success" keyword
 
